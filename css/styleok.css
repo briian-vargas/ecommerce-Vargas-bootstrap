@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../assets/img/FondoBody.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteinerOk{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "header header header"
+                         "aside main main "
+                         "article article article"
+                         "footer footer footer ";
+    grid-gap: 20px;
+}
+
+header {
+    height: 200px;
+    margin: 15px;
+    padding: 20px;
+    background: rgb(221,221,221);
+    background: linear-gradient(180deg, rgba(221,221,221,1) 0%, rgba(255,255,255,1) 35%, rgba(218,218,218,1) 100%);
+    box-shadow: 5px 5px 15px 5px #35909C;
+    border-bottom: 5px ridge #FFFFFF;
+    -webkit-box-shadow: 5px 5px 15px 5px #35909C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 100px;
+    text-align: center;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 150px;
+}
+
+h2 {
+    color: rgb(228, 125, 107);
+    font-family: 'Patrick Hand', cursive;
+    font-size: 40px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: underline;
+}
+
+.nav__header{
+    display: flex;
+    gap: 1rem;
+    font-size: 25px ;
+}
+ 
+ul{
+    list-style: none;
+}
+
+/* .container{
+    display: grid; 
+    grid-template-areas: "aside main"
+                         "aside  main"
+                         "aside  main";
+    grid-template-columns: auto;
+    gap: 100px;
+    
+}            */
+
+aside {
+    grid-area: aside;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align:justify;
+
+}
+
+main{
+    grid-area: main;
+}
+main h2{
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    padding: 2rem;
+    background-color: rgba(3, 94, 64, 0.212);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer a p{
+    display: none;
+
+}
+
+#Redes {
+    display: flex;
+    justify-content:space-around;
+
+}
+
+.oferta{ 
+    width: 100%;
+    margin: 0 auto;  
+    font-size: small;
+    display: grid;  
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+}
+
+.producto{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.bordeImg {
+    width: 100%;
+    height: auto;
+}
+
+.derechosRes {
+    padding: .5rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(14, 6, 160) 0%, rgba(191,191,193,1) 50%, rgba(0,212,255,1) 100%);
+    font-size: 16px;
+    font-family: 'Tapestry', cursive;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+ 
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 300px;    
+}
+
+i {
+    color: rgb(1, 241, 1);
+    font-size: 40px;
+    position: fixed ;
+    right: 10px;
+    bottom: 10px;
+}
+
+.categNav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align:center;
+    row-gap: 50px;
+    background-color: rgba(253, 0, 0, 0.596);
+    color: white;
+    list-style: none;
+    font-size:0 /* truco por el uso de inline-block*/
+    
+    }
+.categNav li {
+    display: inline-block;
+    width: 25%;
+    position:relative;
+    font-size: 14px
+    }
+.categNav ul ul {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 10rem
+    }
+.categNav ul ul li {
+    display: block;
+    }
+.categNav ul li:hover ul {
+    display:block;
+}
+.categNav ul li{
+    font-size: 20px;
+}
+
+article {
+        grid-area: article;
+        font-size: 50px;
+        text-align: center;
+        color: #694e01;
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        background-image: url(../assets/img/marcoTestimonios2.jpg);
+        background-position: center;
+}
+
+article h2{
+    font-family: 'Tapestry', cursive;
+    text-align: center;
+    border: 5px inset #78A49F;
+    border-radius: 40px;
+    width: auto;
+    height: auto;
+    padding: 1%;
+    display: inline-block;
+}
+
+article .masVendidosMedio{
+    text-align: center;
+    background-color: #46464d00;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .conteinerOk{
+     grid-template-columns: (1fr);
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+     grid-template-areas: 
+            "header"
+            "aside"
+            "main"
+            "article"
+            "footer";
+    }
+    footer a p{
+        display: inline-flex;
+    }
+}
+
+ @media screen and (max-width: 1200px) {
+    .conteinerOk{
+        grid-template-columns: (1fr 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+               "header header"
+               "aside main"
+               "article article" 
+               "footer footer";    
+}
+}
