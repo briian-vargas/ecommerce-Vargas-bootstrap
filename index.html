@@ -9,12 +9,12 @@
     <link rel="short cut icon" href="./assets/fav/1344Icons.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Patrick+Hand&family=Roboto:wght@100;300;500;900&family=Sacramento&family=Tapestry&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Patrick+Hand&family=Roboto:wght@100;300;500;900&family=Sacramento&family=Tapestry&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d2bbbdb7a2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styleok.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 
 <body>
@@ -34,7 +34,7 @@
 
         <!-- <div class="container"> -->
 
-            <aside class="side">
+            <aside class="side animate__animated animate__bounceInLeft">
                 <div><h2>Categorias:</h2></div>
                 <nav class="categNav">
                     <ul>
@@ -76,7 +76,7 @@
 
             <main>
                 <h2>Ofertas</h2>
-                <div class="oferta">
+                <div class="oferta animate__animated animate__bounceInDown">
                     <div class="producto">
                         <h3>Zapatilla De Dama Talle 38 = $5000</h3>
                         <img class="bordeImg" src="./assets/img/zapatillaDamaTalle38.jpg" alt="ofertaDama">
@@ -167,6 +167,10 @@
                 </div>
         </footer>
     </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>  
 </body>
 
 </html>

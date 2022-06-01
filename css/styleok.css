@@ -60,6 +60,8 @@ h2 {
     padding: 5px;
     margin: 5px;
     text-decoration: underline;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .nav__header{
@@ -120,6 +122,28 @@ footer{
 
 footer a p{
     display: none;
+
+}
+
+footer a:hover {
+    transform: rotate(360deg);
+    transition:all 2s;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    color: azure;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: solid #a7aff5;
+    
+}
+
+footer ul :hover {
+border: double black;
 
 }
 
@@ -247,6 +271,12 @@ article .masVendidosMedio{
     margin: 10px;
     padding: 10px;
 }
+
+h3:hover {
+    transition: 1s;
+    transform: scale(2);
+}
+
 
 
 @media screen and (max-width: 1200px) {
