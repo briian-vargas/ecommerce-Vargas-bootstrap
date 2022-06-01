@@ -64,8 +64,17 @@ h2 {
 
 .nav__header{
     display: flex;
-    gap: 1rem;
-    font-size: 25px ;
+    gap: 3rem;
+    font-size: 30px ;
+    color: azure;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: solid #a7aff5;
+    
+}
+
+.nav__header li:hover{
+    border: double black;
 }
  
 ul{
@@ -240,31 +249,42 @@ article .masVendidosMedio{
 }
 
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 1200px) {
     .conteinerOk{
-     grid-template-columns: (1fr);
-     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-     grid-template-areas: 
-            "header"
-            "aside"
-            "main"
-            "article"
-            "footer";
-    }
-    footer a p{
-        display: inline-flex;
-    }
-}
-
- @media screen and (max-width: 1200px) {
-    .conteinerOk{
-        grid-template-columns: (1fr 1fr);
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
                "header header"
                "aside main"
                "article article" 
                "footer footer";    
 }
+
+.oferta{
+    grid-template-columns: repeat(2, 1fr);
+   }
+
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .conteinerOk{
+     grid-template-columns: 1fr;    
+     grid-template-areas: 
+            "header"
+            "aside"
+            "main"
+            "article"
+            "footer";
+     } 
+
+     .oferta{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    footer a p{
+        display: inline-flex;
+    }
+}
+
+ 
