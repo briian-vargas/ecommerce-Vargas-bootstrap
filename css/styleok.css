@@ -278,7 +278,19 @@ h3:hover {
 }
 
 
+.card-modif{
+    display: flex;
+    justify-content: center;
+}
 
+
+.btn-primary {
+        color: #fff;
+        background-color: #212529;
+        border-color: #dc3545;
+}
+
+/* 
 @media screen and (max-width: 1200px) {
     .conteinerOk{
         grid-template-columns: 1fr 1fr;
@@ -315,6 +327,6 @@ h3:hover {
     footer a p{
         display: inline-flex;
     }
-}
+} */
 
  
